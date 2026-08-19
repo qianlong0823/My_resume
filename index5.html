@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <style>
+    @media print {
+      .no-print { display: none !important; }
+      body { background-color: white !important; color: black !important; }
+      .shadow-sm, .shadow-md, .shadow-lg { box-shadow: none !important; }
+      .page-break { page-break-inside: avoid; }
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased leading-relaxed">
+
+  <!-- 頂部導航與下載列 -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200 no-print">
+    <div class="max-w-5xl mx-auto px-4 py-3 flex justify-between items-center">
+      <span class="font-bold text-lg text-slate-900 tracking-wide">TAN QIAN LONG</span>
+      <div class="flex items-center space-x-3">
+        <button onclick="window.print()" class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium px-4 py-2 rounded-lg transition shadow-sm">
+          <i class="fa-solid fa-file-pdf"></i>
+          <span>Download/Print PDF</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- 主內容容器 -->
+  <main class="max-w-5xl mx-auto px-4 py-8 md:py-12 space-y-8">
+
+    <!-- Hero / 個人基本資訊 -->
+    <section class="bg-white rounded-2xl p-6 md:p-8 border border-slate-200 shadow-sm">
+      <div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+        <div>
+          <h1 class="text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">TAN QIAN LONG</h1>
+          <p class="text-blue-600 font-semibold text-lg mt-1">Information & Finance Management | Smart Manufacturing & Quality Control</p>
+          <div class="mt-4 text-slate-600 text-sm md:text-base leading-relaxed bg-slate-50 p-4 rounded-xl border border-slate-100">
+            <span class="font-semibold text-slate-800">About Me:</span>
+            Born in Kuching, Sarawak, I have developed strong adaptability and resilience through living and studying in diverse, fast-paced environments. I bridge software engineering with business insight, possessing strong programming skills in Java, Python, and SQL.
+
+My academic journey at National Taipei University of Technology has equipped me with advanced knowledge in Machine Learning, Large Language Models, Natural Language Processing, and Financial Analysis. Beyond academia, my hands-on industry roles in PCB manufacturing and the automotive sector have given me practical expertise in Quality Control, Quality Assurance, and mechanical maintenance.
+
+I thrive in dynamic teams where I can leverage my multidisciplinary background, technical problem-solving, and cross-functional mindset to drive continuous improvement.
+          </div>
+        </div>
+        
+        <!-- 聯絡方式 -->
+        <div class="flex flex-col space-y-2.5 text-sm text-slate-600 border-t md:border-t-0 md:border-l border-slate-200 pt-4 md:pt-0 md:pl-6 shrink-0">
+          <a href="tel:+60162098196" class="flex items-center gap-2.5 hover:text-blue-600 transition">
+            <i class="fa-solid fa-phone w-4 text-slate-400"></i> +6016xxxx196
+          </a>
+          <a href="mailto:qianlong0823@gmail.com?subject=Interview%20Opportunity%20-%20TAN%20QIAN%20LONG" class="flex items-center gap-2.5 hover:text-blue-600 transition">
+            <i class="fa-solid fa-envelope w-4 text-slate-400"></i> qianxxxxxxxx@gmail.com
+          </a>
+          <div class="flex items-center gap-2.5">
+            <i class="fa-solid fa-location-dot w-4 text-slate-400"></i> Malaysia
+          </div>
+          <div class="flex items-center gap-3 pt-2">
+            <a href="https://www.linkedin.com/in/qian-long-275aa8178/" target="_blank" class="text-slate-400 hover:text-blue-600 text-lg transition"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com" target="_blank" class="text-slate-400 hover:text-slate-900 text-lg transition"><i class="fa-brands fa-github"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 專業技能區塊（已將 16 項技能分類排版） -->
+    <section class="space-y-4">
+      <h2 class="text-xl font-bold text-slate-900 flex items-center gap-2">
+        <i class="fa-solid fa-layer-group text-blue-600"></i> Skills & Expertise
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        
+        <!-- 製造與品管/供應鏈 -->
+        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm page-break">
+          <h3 class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3 flex items-center gap-2">
+            <i class="fa-solid fa-industry text-blue-500"></i> Operations & Quality
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 bg-blue-50 text-blue-700 text-xs font-semibold rounded-md">Quality control</span>
+            <span class="px-2.5 py-1 bg-blue-50 text-blue-700 text-xs font-semibold rounded-md">Quality assurance</span>
+            <span class="px-2.5 py-1 bg-blue-50 text-blue-700 text-xs font-semibold rounded-md">Supply chain management</span>
+            <span class="px-2.5 py-1 bg-blue-50 text-blue-700 text-xs font-semibold rounded-md">Maintenance</span>
+            <span class="px-2.5 py-1 bg-blue-50 text-blue-700 text-xs font-semibold rounded-md">Leadership</span>
+          </div>
+        </div>
+
+        <!-- 軟體技術與 AI 資料科學 -->
+        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm page-break">
+          <h3 class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3 flex items-center gap-2">
+            <i class="fa-solid fa-code text-purple-500"></i> AI & Software Development
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 bg-purple-50 text-purple-700 text-xs font-semibold rounded-md">Python</span>
+            <span class="px-2.5 py-1 bg-purple-50 text-purple-700 text-xs font-semibold rounded-md">Java</span>
+            <span class="px-2.5 py-1 bg-purple-50 text-purple-700 text-xs font-semibold rounded-md">Data analysis skills</span>
+            <span class="px-2.5 py-1 bg-purple-50 text-purple-700 text-xs font-semibold rounded-md">Machine learning</span>
+            <span class="px-2.5 py-1 bg-purple-50 text-purple-700 text-xs font-semibold rounded-md">Deep Learning</span>
+            <span class="px-2.5 py-1 bg-purple-50 text-purple-700 text-xs font-semibold rounded-md">Natural Language Processing</span>
+            <span class="px-2.5 py-1 bg-purple-50 text-purple-700 text-xs font-semibold rounded-md">Large Language Models</span>
+            <span class="px-2.5 py-1 bg-purple-50 text-purple-700 text-xs font-semibold rounded-md">Prompt Engineering</span>
+          </div>
+        </div>
+
+        <!-- ERP 與財務/資料庫工具 -->
+        <div class="bg-white p-5 rounded-xl border border-slate-200 shadow-sm page-break">
+          <h3 class="text-xs font-bold uppercase tracking-wider text-slate-500 mb-3 flex items-center gap-2">
+            <i class="fa-solid fa-chart-line text-emerald-500"></i> ERP, Finance & Database
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-2.5 py-1 bg-emerald-50 text-emerald-700 text-xs font-semibold rounded-md">SAP ERP</span>         
+            <span class="px-2.5 py-1 bg-emerald-50 text-emerald-700 text-xs font-semibold rounded-md">Corporate finance</span>
+            <span class="px-2.5 py-1 bg-emerald-50 text-emerald-700 text-xs font-semibold rounded-md">Financial analysis</span>
+            <span class="px-2.5 py-1 bg-emerald-50 text-emerald-700 text-xs font-semibold rounded-md">SQLite</span>
+            <span class="px-2.5 py-1 bg-emerald-50 text-emerald-700 text-xs font-semibold rounded-md">Microsoft SQL Server</span>
+            <span class="px-2.5 py-1 bg-emerald-50 text-emerald-700 text-xs font-semibold rounded-md">Microsoft Office</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 工作經歷 (Work Experience) -->
+    <section class="space-y-4">
+      <h2 class="text-xl font-bold text-slate-900 flex items-center gap-2">
+        <i class="fa-solid fa-briefcase text-blue-600"></i> Work Experience
+      </h2>
+      <div class="space-y-4">
+        
+        <!-- Experience 1: Compeq -->
+        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm page-break">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+            <h3 class="font-bold text-slate-900 text-lg">Quality Control Technician</h3>
+            <span class="text-xs font-medium text-blue-600 bg-blue-50 px-2.5 py-1 rounded-md w-fit">June 2023 – August 2023</span>
+          </div>
+          <p class="text-sm font-semibold text-slate-600 mb-3">Compeq Manufacturing Co., Ltd. <span class="font-normal text-slate-400">• Taoyuan Township</span></p>
+          <ul class="list-disc list-outside ml-4 text-sm text-slate-600 space-y-1.5 leading-relaxed">
+            <li>Conducted precision quality inspections for PCB within a cleanroom environment, ensuring hole diameters and dimensions strictly conformed to technical specifications.</li>
+            <li>Executed rework and parameter adjustments for non-conforming units to minimize defect rates and uphold product yield standards.</li>
+            <li>Operated chemical and thermal processes, including primary/secondary PCB acid pickling (acid cleaning) and baking/curing procedures following SOP.</li>
+            <li>Collaborated with production and engineering teams to document defect trends, maintain quality records, and ensure overall compliance with manufacturing standards.</li>
+          </ul>
+        </div>
+
+        <!-- Experience 2: JUN SIONG Motor -->
+        <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm page-break">
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-1 mb-1">
+            <h3 class="font-bold text-slate-900 text-lg">Automotive Service Technician</h3>
+            <span class="text-xs font-medium text-slate-600 bg-slate-100 px-2.5 py-1 rounded-md w-fit">October 2019 – December 2020</span>
+          </div>
+          <p class="text-sm font-semibold text-slate-600 mb-3">JUN SIONG motor <span class="font-normal text-slate-400">• Kuching</span></p>
+          <ul class="list-disc list-outside ml-4 text-sm text-slate-600 space-y-1.5 leading-relaxed">
+            <li>Performed comprehensive vehicle safety inspections, focusing on tire tread depth, wear patterns, and battery health diagnostics (voltage and load testing).</li>
+            <li>Executed routine preventive maintenance services, including engine oil (lube) replacement, oil filter changes, and coolant level inspection and replenishment.</li>
+            <li>Conducted precision wheel balancing and four-wheel alignment adjustments to ensure optimal driving stability, safety, and tire longevity.</li>
+            <li>Communicated diagnostic findings and maintenance recommendations clearly to customers, delivering reliable after-sales service and quality assurance.</li>
+          </ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 學歷與證照 (Education & Certifications) -->
+    <section class="grid grid-cols-1 md:grid-cols-2 gap-4">
+      
+      <!-- Education -->
+      <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm page-break">
+        <h2 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-2">
+          <i class="fa-solid fa-graduation-cap text-blue-600"></i> Education
+        </h2>
+        <div>
+          <h3 class="font-semibold text-slate-900 text-base">Bachelor's degree in Department of Information and Finance Management</h3>
+          <p class="text-sm text-blue-600 font-medium mt-0.5">National Taipei University of Technology <span class="text-slate-400 font-normal">• Taipei City</span></p>
+          <p class="text-xs text-slate-500 mt-1 font-mono">September 2021 to July 2026</p>
+        </div>
+      </div>
+
+      <!-- Certifications -->
+      <div class="bg-white p-6 rounded-xl border border-slate-200 shadow-sm page-break">
+        <h2 class="text-lg font-bold text-slate-900 mb-3 flex items-center gap-2">
+          <i class="fa-solid fa-certificate text-blue-600"></i> Certifications & Licenses
+        </h2>
+        <div class="flex items-center gap-3 p-3 bg-slate-50 rounded-lg border border-slate-100">
+          <div class="w-10 h-10 rounded-full bg-blue-100 text-blue-600 flex items-center justify-center font-bold text-xs">
+            WSET
+          </div>
+          <div>
+            <h3 class="font-bold text-slate-800 text-sm">WSET LV 2</h3>
+            <p class="text-xs text-slate-500">Wine & Spirit Education Trust Level 2 Award</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- 頁尾 -->
+  <footer class="text-center py-6 text-xs text-slate-400 border-t border-slate-200 no-print">
+    © 2026 TAN QIAN LONG • Tailored for Manufacturing & Data Analytics Positions
+  </footer>
+
+</body>
+</html>
